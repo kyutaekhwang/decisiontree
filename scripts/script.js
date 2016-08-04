@@ -1,4 +1,19 @@
 $(document).ready(function() {
+ 	$(window).scroll(function () {
+        if ($(this).scrollTop() > 100) {
+            $('.top').fadeIn();
+        } else {
+            $('.top').fadeOut();
+        }
+    });
+
+    $('.top').click(function () {
+        $("html, body").animate({
+            scrollTop: 0
+        }, 600);
+        return false;
+    });
+    
  	$("#yes").on('click', function() {
  		$(".begin, .question1").show();
  		$(".question2, .end, .statement1, .statement2, .statement3").hide();
