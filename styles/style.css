@@ -89,7 +89,7 @@ body, html {
 }
 
 .top {
-	position: fixed;
+	position: absolute;
 	text-decoration: none;
 	text-align: center;
 	color: black;
